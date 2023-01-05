@@ -65,6 +65,10 @@
               <a class="nav-link active" aria-current="page" href="#proyectos">Proyectos</a>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#redes">Redes</a>
+            </li>
+
 
 
  <!-- HACERME EL LINKEDIN -->
@@ -77,7 +81,7 @@
       </div>
     </nav>
 <!-- Seccion del banner -->
-    <section class="banner">
+    <section class="banner" id="inicio">
       <h1 class="text-center intro">Florencia Fuentes</h1>
       <br />
       <h2 class="text-center intro">Desarrollador Full Stack Jr</h2>
@@ -86,17 +90,18 @@
 
 <!-- presentacion-->
     <section class="presentacion">
-      <div class="container div-profile">
+      <div class="container-fluid div-profile row d-flex flex-column flex-md-row">
+        <div class="div-img-profile col-12 col-md-4 d-flex justify-content-center">
         <img
           src="./assets/img/FB_IMG_1428285724958.jpg"
           alt="fotoPerfil"
           class="fotoperfil rounded-circle img-fluid perfil"
         />
+        </div>
 
 <!-- acerca de mi me queda abajo -->
-        <div class="container text-center">
-          <div class="row d-flex justify-content-center">
-            <div class="col-12  text-center">
+        <div class="container text-center row d-flex justify-content-center col-12 col-md-8">
+            <div class="col-12 text-center div-p">
               <p  id="Acercademi">
                 Una de mis grandes pasiones es el desarrollo de paginas web.
                 Siempre me gusto este hermoso mundo de la programación. Empece
@@ -110,11 +115,10 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
 
 <!-- Experiencia -->
- <section class="experiencia">
+ <section class="experiencia ">
   <div class="container d-flex flex-column ">
     <h2 class="experiencia-title text-center " id="experiencia"> Experiencia</h2>
     <div class="experiencia-cont row   d-flex justify-content-center">
@@ -293,6 +297,12 @@
    <div class="container fondo-ski">
         <h1 id="habilidadestecnicas">Habilidades Técnicas</h1>
         <div class="skill">
+          <h3>PSeInt</h3>
+          <h4>95%</h4>
+          <span class="skill-bar"></span>
+          <span class="fill-bar pseint"></span>
+      </div>
+        <div class="skill">
             <h3>Html</h3>
             <h4>85%</h4>
             <span class="skill-bar"></span>
@@ -357,7 +367,7 @@
             </div>
             <div class="face face2">
                 <div class="content">
-                    <p>Un juego divertido donde el usuario deberá adivinar un color a partir de su código RGB.<br> En este proyecto se utilizo JavaScript, por lo que integra HTML, CSS y JS.</p>
+                    <p>Un juego divertido donde el usuario deberá adivinar un color a partir de su código RGB.</p>
                         <a href="https://graceful-malasada-201f0b.netlify.app/" target="_blank">Juegar</a>
                 </div>
             </div>
@@ -507,23 +517,18 @@
           <div>
             <p>¡Para contactarte conmigo podes seguirme en las redes!</p>
           </div>
-          <div
-                class="redes d-flex flex-row flex-wrap align-items-center justify-content-center ">
+          <div  class="redes d-flex flex-row flex-wrap align-items-center justify-content-center " id="redes">
                 <a
-                  class="nav-link"
-                  href="https://github.com/FlorFuentes"
-                  target="_blank"
-                >
-                  <i class="fa-brands fa-github text-white"></i
-                ></a>
+                  class="nav-link" title="GitHub" href="https://github.com/FlorFuentes"  target="_blank">
+                  <i class="fa-brands fa-github text-white"></i></a>
 
-                <a class="nav-link" href="https://t.me/Flor_Fuentes_12" target="_blank"
-                  ><i class="fa-brands fa-telegram text-white"></i
-                ></a>
+                <a class="nav-link" title="Telegram" href="https://t.me/Flor_Fuentes_12" target="_blank"><i class="fa-brands fa-telegram text-white"></i></a>
 
-                <a class="nav-link" href="https://linkedin.com" target="_blank"
-                  ><i class="fa-brands fa-linkedin text-white"></i
-                ></a>
+                <a class="nav-link" title="Linkedin" href="https://linkedin.com" target="_blank"
+                  ><i class="fa-brands fa-linkedin text-white"></i></a>
+          </div>
+          <div class="boton-up">
+            <a title= "Volver al inicio"  href="#inicio"> <i class="fa-regular fa-circle-up text-white fa-2x"></i></a>
           </div>
           <p class="disclaimer">Copyright © Todos los derechos reservados 05/2023</p>
     </footer>
